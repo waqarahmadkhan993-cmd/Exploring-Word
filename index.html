@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExploreWorld - Travel Agency</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <a href="#" class="logo">Explore<span>World.</span></a>
+
+    <button id="menuBtn">☰</button>
+
+    <nav id="nav">
+        <a href="#home">Home</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#packages">Packages</a>
+        <a href="#about">About</a>
+    </nav>
+
+    <a href="#destinations" class="header-btn">Explore Now</a>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <p class="tag">DISCOVER THE WORLD</p>
+        <h1>Explore The World,<br><span>Enjoy Your Life.</span></h1>
+        <p>Discover amazing destinations, unforgettable adventures
+        and beautiful places around the world.</p>
+        <a href="#destinations" class="main-btn">Explore Destinations →</a>
+    </div>
+</section>
+
+<section class="search-section">
+    <h2>Find Your Next Adventure</h2>
+
+    <input type="text" id="searchInput"
+           placeholder="Search destination...">
+
+    <select id="categoryFilter">
+        <option value="all">All Destinations</option>
+        <option value="beach">Beach</option>
+        <option value="mountain">Mountain</option>
+        <option value="city">City</option>
+    </select>
+
+    <button id="searchBtn">Search</button>
+</section>
+
+<section class="destinations" id="destinations">
+    <p class="tag">POPULAR PLACES</p>
+    <h2>Explore Beautiful Destinations</h2>
+
+    <div class="destination-grid" id="destinationGrid">
+
+        <div class="card" data-category="mountain">
+            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800" alt="Switzerland mountains">
+            <div class="card-content">
+                <span>⭐ 4.9 Rating</span>
+                <h3>Switzerland</h3>
+                <p>7 Days · 6 Nights</p>
+                <h4>$850 / Person</h4>
+                <button class="book-btn" data-place="Switzerland">Book Now</button>
+            </div>
+        </div>
+
+        <div class="card" data-category="beach">
+            <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=800" alt="Maldives beach">
+            <div class="card-content">
+                <span>⭐ 4.8 Rating</span>
+                <h3>Maldives</h3>
+                <p>5 Days · 4 Nights</p>
+                <h4>$650 / Person</h4>
+                <button class="book-btn" data-place="Maldives">Book Now</button>
+            </div>
+        </div>
+
+        <div class="card" data-category="city">
+            <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800" alt="Dubai city">
+            <div class="card-content">
+                <span>⭐ 4.7 Rating</span>
+                <h3>Dubai</h3>
+                <p>4 Days · 3 Nights</p>
+                <h4>$500 / Person</h4>
+                <button class="book-btn" data-place="Dubai">Book Now</button>
+            </div>
+        </div>
+
+        <div class="card" data-category="mountain">
+            <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800" alt="Mountain landscape">
+            <div class="card-content">
+                <span>⭐ 4.9 Rating</span>
+                <h3>Hunza Valley</h3>
+                <p>6 Days · 5 Nights</p>
+                <h4>$350 / Person</h4>
+                <button class="book-btn" data-place="Hunza Valley">Book Now</button>
+            </div>
+        </div>
+
+        <div class="card" data-category="city">
+            <img src="https://images.unsplash.com/photo-1533929736458-ca588d08c8be?w=800" alt="London city">
+            <div class="card-content">
+                <span>⭐ 4.8 Rating</span>
+                <h3>London</h3>
+                <p>5 Days · 4 Nights</p>
+                <h4>$900 / Person</h4>
+                <button class="book-btn" data-place="London">Book Now</button>
+            </div>
+        </div>
+
+        <div class="card" data-category="beach">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800" alt="Tropical beach">
+            <div class="card-content">
+                <span>⭐ 4.8 Rating</span>
+                <h3>Bali</h3>
+                <p>6 Days · 5 Nights</p>
+                <h4>$700 / Person</h4>
+                <button class="book-btn" data-place="Bali">Book Now</button>
+            </div>
+        </div>
+
+    </div>
+
+    <p id="noResults" hidden>No destinations found!</p>
+</section>
+
+<section class="about" id="about">
+    <p class="tag">ABOUT US</p>
+    <h2>Your Journey, Our Passion.</h2>
+    <p>ExploreWorld helps travelers discover beautiful destinations
+    and create unforgettable memories through amazing travel experiences.</p>
+</section>
+
+<section class="newsletter" id="packages">
+    <h2>Ready For Your Next Trip?</h2>
+    <p>Start exploring and plan your next adventure today.</p>
+    <a href="#destinations" class="main-btn">View Packages →</a>
+</section>
+
+<footer>
+    <h3>ExploreWorld.</h3>
+    <p>Made by Waqar Ahmad Khan</p>
+    <p>© 2026 ExploreWorld Travel. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
